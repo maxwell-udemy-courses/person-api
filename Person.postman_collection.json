@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "423f3545-9dd7-4786-a5e4-d8a1d68dad05",
+		"name": "Person",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/person/id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"tomas\",\n\t\"lastName\": \"perez\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/person/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"person",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/person/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/person/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"person",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/person/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/person/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"person",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/person/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/person/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/person/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"linda\",\n    \"lastName\": \"tompson\",\n    \"documentNumber\": 5464656,\n    \"country\": \"Argentina\",\n    \"city\": \"Buenos Aires\",\n    \"street\": \"av siempreviva\",\n    \"number\": \"1010\",\n    \"single\": 0\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/person/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
